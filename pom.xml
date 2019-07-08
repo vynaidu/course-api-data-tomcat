@@ -6,11 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.javabrains</groupId>
-	<artifactId>course-api-data</artifactId>
+	<artifactId>course-api-data-tomcat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
-	<name>course-api-data</name>
+	<name>course-api-data-tomcat</name>
 	<description>Course API with data for Spring Boot QuickStart Java Brains course</description>
 
 	<parent>
@@ -112,6 +112,12 @@
 			<groupId>com.beust</groupId>
 			<artifactId>jcommander</artifactId>
 			<version>1.27</version>
+		</dependency>
+		<!-- marked the embedded servlet container as provided -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
